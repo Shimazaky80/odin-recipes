@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 /* Global styles */
 * {
@@ -12,13 +11,15 @@
 body {
   font-family: "Nunito Sans", sans-serif;
   min-height: 100vh;
+  background-color: lavender;
+  letter-spacing: 0.05rem;
 }
 
 /* Header styles */
 .header-home {
     background-color: black;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Cinzel', serif;
     padding: 10px 18px;
     display: flex;
@@ -31,13 +32,12 @@ body {
     padding: 5px 20px;
     color: white;
     background-color: red;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: xx-large;
 }
 
 .header-home a:hover {
     border: 2px solid whitesmoke;
-    font-family: "Nunito Sans", sans-serif;
     font-size: 1.5rem;
 }
 
@@ -46,3 +46,68 @@ body {
     color: black;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .header-home {
+        background-color: black;
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-home a {
+        text-decoration: none;
+        padding: 5px 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: red;
+        font-size: xx-large;
+        width: 100%;
+        border-radius: 5px;
+    }
+  }
+
+  .main-content h2, p, ul {
+    margin-bottom: 20px;
+  }
+
+  .main-content img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    background-color: rgba(19, 17, 17, 0.8);
+    color: #fff;
+    padding: 5px 15px;
+  }
+
+  h4 {
+    padding: 5px 15px;
+  }
+
+  p {
+    padding-left: 15px;
+  }
+
+  ul, ol {
+    padding-left: 45px;
+    line-height: 1.5;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
